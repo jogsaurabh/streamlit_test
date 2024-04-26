@@ -183,7 +183,7 @@ with tab5:
         for i in st.session_state['rows']:
             #st.session_state[f'first_{i}']
             #add expander with Ledgername
-            exp_name=f'{i}_{st.session_state[f'first_{i}']}'
+            exp_name=f'{i}_{st.session_state[f"first_{i}"]}'
             #st.write(exp_name)
             exp_name=st.expander(f":blue[**Allocation for:-{st.session_state[f'first_{i}']}**] :- :green[**{st.session_state[f'middle_{i}']}**]",expanded=False)
             #for each Ledget in expander add CC details
@@ -204,7 +204,7 @@ with tab5:
                             columns=['Cost Center','Amount']
                         )
                     
-                    newdf=st.data_editor(df1,hide_index=True,num_rows="dynamic",key=f'{cc}{i}_{st.session_state[f'first_{i}']}',
+                    newdf=st.data_editor(df1,hide_index=True,num_rows="dynamic",key=f"{cc}{i}_{st.session_state[f'first_{i}']}",
                                             column_config={"Cost Center": st.column_config.SelectboxColumn(
                                                 "Cost Center",default=None,
                                                 help="The category of the app",

@@ -40,7 +40,7 @@ def dataframe_with_selections():
 
 def show_df():
      st.session_state.df=conn.query("select * from pet_owners")
-     selection=dataframe_with_selections(st.session_state.df)
+     selection=dataframe_with_selections()
      return selection
 
 def deldata(mylist,tnewlist):

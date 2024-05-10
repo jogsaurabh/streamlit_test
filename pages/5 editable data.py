@@ -2,6 +2,8 @@ import streamlit as st
 import sqlite3
 import pandas as pd
 
+with open('style.css') as f:
+       st.markdown(f'<style>{f.read()}/<style>',unsafe_allow_html=True)
 df = pd.DataFrame(
     [
         {"command": "st.selectbox", "rating": 4, "is_widget": True},

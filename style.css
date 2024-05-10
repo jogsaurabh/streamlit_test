@@ -21,6 +21,7 @@
                  
             }
            
+            
 
             div[data-testid=stToast] {
                 padding: 20px 10px 40px 10px;
@@ -65,7 +66,7 @@
                 width: 100%;
             }
 
-          
+            
 /* for all Text Input*/    
             div.stMultiSelect > label{font-size:110%; font-weight:bold; color:rgb(2, 2, 112);}  
 /* for all Text Input*/
@@ -74,12 +75,6 @@
             div.stSelectbox > label{font-size:110%; font-weight:bold; color:rgb(2, 2, 112);} 
 /* for all Dateframe editors Box*/     
 /* for success*/
-            div[data-testid=stNotificationContentSuccess]{
-                text-align: center;
-                
-
-            }
            
-
             /*
             dvn-scroller.glideDataEditor.dvn-underlay

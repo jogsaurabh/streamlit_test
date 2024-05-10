@@ -208,7 +208,6 @@ if "df" not in st.session_state:
 def delete_data_lic():
     del_lic_con  = st.empty()
 
-    
     #def updatelic(name,Expiry_Date,time_zone,email):
     
     with del_lic_con.container(border=True):
